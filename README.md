@@ -25,11 +25,11 @@ Things you may want to cover:
 
 
 
-App rails Criado
-App Vue Criado
-Rota posts Criado
-Pagina com inputs Criado
-Listando, Criando, Editando e Deletando
+- App rails Criado
+- App Vue Criado
+- Rota posts Criado
+- Pagina com inputs Criado
+- Listando, Criando, Editando e Deletando
 
 
 Dois terminais;
