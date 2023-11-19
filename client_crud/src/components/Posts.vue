@@ -19,7 +19,9 @@
     <button v-else @click="createPost">Create</button>
 
     <!-- Lista de Posts -->
-    
+    <div v-for="post in posts" :key="post.id">
+      <h5>[{{ post.id }}] {{ post.title }}</h5>
+      <p>{{ post.body }}</p>
 
       <button @click="editPost(post.id)">Edit</button>
       <button @click="deletePost(post.id)">Delete</button>
@@ -35,7 +37,7 @@ const title = ref("");
 const body = ref("");
 const post_id = ref(0);
 const isEditing = ref(false);
-const API_URL = "http://localhost:3000/posts";
+const API_URL = "http://127.0.0.1:3000/posts";
 
 onMounted(async () => {
   const res = await fetch(API_URL);
